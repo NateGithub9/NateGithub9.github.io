@@ -174,3 +174,94 @@ article {
     display: block;
     margin: 0 auto;
 }
+/* Responsive Design for iPhones */
+
+/* Styles for screens 320px and up (iPhone SE) */
+@media (min-width: 320px) and (max-width: 374px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        flex-direction: column;
+    }
+
+    .navbar-left .nav-link,
+    .navbar-right .nav-link {
+        margin: 5px 0;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    article {
+        margin-right: 0;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/* Styles for screens 375px and up (iPhone 6/7/8, X/XS, 11 Pro) */
+@media (min-width: 375px) and (max-width: 413px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        flex-direction: row;
+    }
+
+    .navbar-left .nav-link,
+    .navbar-right .nav-link {
+        margin: 5px 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    article {
+        margin-right: 0;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/* Styles for screens 414px and up (iPhone 6/7/8 Plus, XS Max, 11, 11 Pro Max) */
+@media (min-width: 414px) and (max-width: 767px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        flex-direction: row;
+    }
+
+    .navbar-left .nav-link,
+    .navbar-right .nav-link {
+        margin: 5px 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    article {
+        margin-right: 0;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
