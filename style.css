@@ -147,8 +147,8 @@ article, article a {
     text-decoration: none;
 }
 
-/* Cards */
-.cardsofarticles {
+/* Card */
+.profil {
     flex: 1;
 }
 
@@ -212,7 +212,7 @@ article, article a {
         padding: 15px;
     }
     .nav-link {
-        margin: 10px 0; /* Adds vertical margin between buttons */
+        margin: 10px 0;
     }
 }
 
@@ -245,7 +245,7 @@ article, article a {
         padding: 15px;
     }
     .nav-link {
-        margin: 10px 0; /* Adds vertical margin between buttons */
+        margin: 10px 0; 
     }
 }
 
@@ -278,6 +278,16 @@ article, article a {
         padding: 15px;
     }
     .nav-link {
-        margin: 10px 0; /* Adds vertical margin between buttons */
+        margin: 10px 0; 
     }
+}
+
+.resize {
+    width: 40px;
+    height: auto;
+}
+
+.resize {
+    width: 30px;
+    height: auto;
 }
