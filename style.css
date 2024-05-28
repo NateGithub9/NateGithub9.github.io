@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Aside positioning */
+aside {
+    width: 20%;
+    height: 500px;
+    float: right;
+}
 
 /* Body Styling */
 body {
@@ -11,7 +17,7 @@ body {
     line-height: 1.6;
     margin: 20px;
     background-color: #fff;
-    color: #333;
+    color: #000000;
 }
 
 /* Navigation Bar Britannica */
@@ -141,6 +147,13 @@ header h2 {
     display: flex;
 }
 
+section {
+    width: 60%;
+}
+
+header {
+    width: 60%;
+}
 article, article a {
     flex: 3;
     margin-right: 0.px;
@@ -280,14 +293,4 @@ article, article a {
     .nav-link {
         margin: 10px 0; 
     }
-}
-
-.resize {
-    width: 40px;
-    height: auto;
-}
-
-.resize {
-    width: 30px;
-    height: auto;
 }
