@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Georgia', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navigation Bar Britannica */
+.navbar {
+    background-color: #03182e;
+    display: flex;
+    
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-left {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #03182e;
+    margin-left: left;
+}
+.navbar-right {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #03182e;
+    margin-left: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    padding: 8px 12px;
+    background-color: #03182e;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: #004080;
+}
+
+/* Navigation Bar: Print, Cite, Share, Feedback */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: px solid #ffffff;
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    margin: 0 4px;
+}
+
+/* Breadcrumbs */
+.nav2 {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.nav2 li {
+    margin-right: 10px;
+}
+
+.nav2 li a {
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.nav2 li::after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.nav2 li:last-child::after {
+    content: '';
+}
+
+/* Article Header */
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    color: #000000;
+}
+
+.article-meta, .article-info {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0px 12px;
+    margin-right: 1px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #1711b4;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: #005f8d;
+    color: white;
+}
+
+/* Main Content Layout */
+.content-wrapper {
+    display: flex;
+}
+
+article {
+    flex: 3;
+    margin-right: 20px;
+}
+
+/* Cards */
+.cardsofarticles {
+    flex: 1;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.card header img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    display: block;
+    margin: 0 auto;
+}
