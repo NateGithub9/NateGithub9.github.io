@@ -1,41 +1,35 @@
-/* Basic Reset */
+/** {
+    border: 1px solid red; 
+}*/
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
-/* Aside positioning */
-aside {
-    width: 20%;
-    height: 500px;
-    float: right;
-}
-
 /* Body Styling */
 body {
     font-family: 'Georgia', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #fff;
+    background-color: #d1d1d1;
     color: #000000;
 }
-
+section {
+    background-color: white;
+}
+.img {
+    object-fit: cover;
+    object-position: 3px;
+    width: 200px;
+    height: 200px;
+}
 /* Navigation Bar Britannica */
-.navbar {
+nav {
     background-color: #03182e;
     display: flex;
-
     align-items: center;
     padding: 10px 20px;
     font-family: 'Arial', sans-serif;
 }
-
-.nav-link {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
 .navbar-left {
     display: flex;
     list-style-type: none;
@@ -52,7 +46,6 @@ body {
     background-color: #03182e;
     margin-left: auto;
 }
-
 .nav-link {
     text-decoration: none;
     color: white;
@@ -62,235 +55,83 @@ body {
     border-radius: 5px;
     font-family: 'Arial', sans-serif;
 }
-
 .nav-link:hover {
     background-color: #004080;
 }
-
-/* Navigation Bar: Print, Cite, Share, Feedback */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    background-color: #ffffff;
-    border-bottom: px solid #ffffff;
-    margin-bottom: 0px;
-}
-
-nav ul li {
-    margin: 0 4px;
-}
-
 /* Breadcrumbs */
-.nav2 {
+.bread {
     list-style: none;
     display: flex;
     margin-bottom: 20px;
-}
-
-.nav2 li {
     margin-right: 10px;
-}
-
-.nav2 li a {
     text-decoration: none;
     color: #0073b1;
 }
-
-.nav2 li::after {
+.bread li::after {
     content: '>';
     margin-left: 10px;
 }
 
-.nav2 li:last-child::after {
+.bread li:last-child::after {
     content: '';
 }
-
-/* Article Header */
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0;
-}
-
-header h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-    color: #000000;
-}
-
-.article-meta, .article-info {
-    font-size: 0.9rem;
-    color: #999;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 0px 12px;
-    margin-right: 1px;
-    text-decoration: none;
-    background-color: #ffffff;
-    color: #1711b4;
-    border-radius: 5px;
-    font-size: 0.9rem;
-}
-
-.btn:hover {
-    background-color: #005f8d;
-    color: white;
-}
-
-/* Main Content Layout */
-.content-wrapper {
+/*boutons print ect*/
+.print {
     display: flex;
+    
 }
+/* Le container prend le les 2 articles */
+/*Dispositions du contenu dans container*/
+.container {
+    display: flex;
+    width: 45%;
+}
+/* Maintient du ratio de l'image */
+img {
+    object-fit: contain;
+}
+/* Container */
 
-section {
-    width: 60%;
-}
-
-header {
-    width: 60%;
-}
-article, article a {
-    flex: 3;
-    margin-right: 0.px;
-    text-decoration: none;
-}
-
-/* Card */
-.profil {
-    flex: 1;
-}
-
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.card header img {
+article {
+    display: flex;
     width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    flex-direction: column;
+}
+.card {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    border: 2px solid rgb(231, 231, 231);
+    background-color:solid red;
 }
 
-.card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
 
-.card p {
-    margin-bottom: 10px;
-}
 
-.card .btn {
-    font-size: 0.8rem;
-    padding: 5px 10px;
-    display: block;
-    margin: 0 auto;
-}
-/* Responsive Design for iPhones */
-
-/* Styles for screens 320px and up (iPhone SE) */
-@media (min-width: 320px) and (max-width: 374px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-left,
-    .navbar-right {
-        flex-direction: column;
-    }
-
-    .navbar-left .nav-link,
-    .navbar-right .nav-link {
-        margin: 5px 0;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    article {
-        margin-right: 0;
-    }
-
-    .card {
-        padding: 15px;
-    }
-    .nav-link {
-        margin: 10px 0;
-    }
-}
-
-/* Styles for screens 375px and up (iPhone 6/7/8, X/XS, 11 Pro) */
-@media (min-width: 375px) and (max-width: 413px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .navbar-left,
-    .navbar-right {
-        flex-direction: row;
-    }
-
-    .navbar-left .nav-link,
-    .navbar-right .nav-link {
-        margin: 5px 10px;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    article {
-        margin-right: 0;
-    }
-
-    .card {
-        padding: 15px;
-    }
-    .nav-link {
-        margin: 10px 0; 
-    }
-}
-
+   
 /* Styles for screens 414px and up (iPhone 6/7/8 Plus, XS Max, 11, 11 Pro Max) */
 @media (min-width: 414px) and (max-width: 767px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
-
-    .navbar-left,
-    .navbar-right {
-        flex-direction: row;
-    }
-
-    .navbar-left .nav-link,
-    .navbar-right .nav-link {
-        margin: 5px 10px;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    article {
-        margin-right: 0;
-    }
-
     .card {
-        padding: 15px;
+        width: 100%;
     }
-    .nav-link {
-        margin: 10px 0; 
+    img{
+        right: 0px;
+        left: 0px;
+        margin:auto;
+        display:block;
     }
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+.container {
+    display: flex;
+    border: 20px solid green;
+
+}   
+
 }
